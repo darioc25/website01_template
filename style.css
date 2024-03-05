@@ -1,0 +1,561 @@
+:root{
+   --main-color: rgb(244, 162, 39);
+   --main-font: "Outfit", sans-serif;
+   --heading-font: "Dancing Script", cursive;
+}
+
+*{
+   box-sizing: border-box;
+   margin: 0px;
+   padding: 0px;
+   font-family: var(--main-font);
+}
+
+body{
+   max-width: 1920px;
+   min-width: 1280px;
+   margin: auto;
+   overflow-x: auto;
+   overflow-y: auto;
+   background-color: white;
+}
+
+/* Header */
+.custom-header{
+   height: 100vh;
+   max-height: 1080px;
+   min-height: 720px;
+   background: url(./media/mountains-5727541_1920.jpg);
+   background-repeat: no-repeat;
+   background-position: 50%;
+   background-size: cover;
+}
+
+.header-container{
+   width: 100%;
+   height: 100%;  
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header-logo{
+   height: 40%;
+}
+
+/* Section 01 */
+.custom-section01{
+   height: 100vh;
+   max-height: 1080px;
+   min-height: 720px;
+   background: url(./media/night-4702174_1920.jpg);
+   background-repeat: no-repeat;
+   background-position: 50% 0%;
+   background-size: cover;
+}
+
+.section01-container{
+   background-color: rgba(0, 0, 0, 0.2);
+   height: 100%;
+   display: flex;
+   padding: 0px 5%;
+}
+
+.section01-left{
+   width: 50%;
+   height: 100%;
+   padding: 0% 5%;
+   position: relative;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.section01-left::before{
+   content: "";
+   background-color: var(--main-color);
+   height: 600px;
+   width: 600px;
+   border-radius: 50%;
+   position: absolute;
+   right: 0px;
+   top: 50%;
+   transform: translate(50%, -50%);
+}
+
+.section01-left::after{
+   content: "";
+   background-color: white;
+   height: 600px;
+   width: 5px;
+   position: absolute;
+   right: 0px;
+}
+
+.section01-left > h2{
+   font-size: 4em;
+   font-weight: 500;
+   z-index: 0;
+   color: white;
+   text-align: right;
+}
+
+.section01-right{
+   width: 50%;
+   height: 100%;
+   display: flex;
+   padding: 0% 5%;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.section01-right-textbox p{
+   color: white;
+   font-size: 1.3em;
+   font-weight: 200;
+   margin-bottom: 80px;
+}
+
+.section01-right button{
+   border: none;
+   font-size: 1.2em;
+   font-weight: 300;
+   padding: 5px 15px;
+   transition: 0.1s;
+}
+
+.section01-right button:hover{
+   cursor: pointer;
+   transform: scale(1.05);
+}
+
+/* Section 02 */
+.custom-section02{
+   height: 100vh;
+   min-height: 720px;
+   max-height: 1080px;
+   background: url(./media/mountains-4563464_1920.jpg);
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: cover;
+}
+
+.section02-container{
+   height: 100%;
+   padding: 5%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.section02-card{
+   width: 30%;
+   height: 80%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 10px solid white;
+   background-color: white;
+}
+
+.section02-card-imagebox{
+   overflow: hidden;
+   width: 100%;
+   height: 80%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.section02-card-imagebox:hover > img{
+   transform: scale(0.6);
+}
+
+.card-filter{
+   position: absolute;
+   z-index: 1;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.section02-card-imagebox > img{
+   transform: scale(0.5);
+   transition: 0.3s;
+}
+
+.section02-card-imagebox > h3{
+   position: absolute;
+   font-size: 4em;
+   font-weight: 500;
+   z-index: 2;
+   color: white;
+}
+
+.section02-card-textbox{
+   height: 20%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.section02-card-textbox > p{
+   font-size: 1.5em;
+   font-weight: 400;
+}
+
+.section02-card-textbox > p:last-child{
+   font-size: 1.3em;
+   font-weight: 300;
+}
+
+/* Section 03 */
+.custom-section03{
+   height: 50vh;
+   /* (1080p / 2) */
+   max-height: 540px;
+   /* (720p / 2) */
+   min-height: 360px;
+   background-color: black;
+}
+
+.section03-container{
+   height: 100%;
+   padding: 0% 5%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.section03-titlebox{
+   height: 100%;
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+.section03-titlebox > h2{
+   font-size: 4em;
+   font-weight: 500;
+   color: var(--main-color);
+}
+
+.section03-textbox{
+   height: 100%;
+   width: 50%;
+   display: flex;
+   align-items: center;
+}
+
+.section03-textbox > p{
+   padding: 5%;
+   font-size: 1.3em;
+   font-weight: 200;
+   color: white;
+   border-left: 5px solid white;
+}
+
+/* Section 04 */
+.custom-section04{
+   height: 100vh;
+   min-height: 720px;
+   max-height: 1080px;
+   color: white;
+   background-image: url(./media/sunset-7898136_1920.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 50% 100%;
+}
+
+.section04-container{
+   height: 100%;
+   padding: 0% 5%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.section04-imagebox{
+   height: 70%;
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+   position: relative;
+   border: 5px solid white;
+}
+
+.section04-imagebox > img{
+   height: 100%;
+   transform: scale(1.2) translateY(-5%);
+}
+
+.section04-imagebox > h2{
+   position: absolute;
+   color: white;
+   font-size: 4em;
+   font-weight: 400;
+   background-color: rgba(0, 0, 0, 0.2);
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.section04-textbox{
+   height: 100%;
+   width: 50%;
+   padding: 0% 5%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.section04-textbox > p{
+   font-size: 1.3em;
+   font-weight: 200;
+   margin-bottom: 80px;
+}
+
+.section04-textbox > button{
+   border: none;
+   font-size: 1.2em;
+   font-weight: 300;
+   padding: 5px 15px;
+   transition: 0.1s;
+}
+
+.section04-textbox > button:hover{
+   cursor: pointer;
+   transform: scale(1.05);
+}
+
+/* Section 05 */
+.custom-section05{
+   height: 100vh;
+   min-height: 720px;
+   max-height: 1080px;
+   background-color: var(--main-color);
+}
+
+.section05-container{
+   height: 100%;
+   padding: 0% 5%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.section05-left{
+   width: 50%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0% 5%;
+}
+
+.section05-textbox{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   justify-content: center;
+}
+
+.section05-textbox > p{
+   font-size: 1.3em;
+   font-weight: 200;
+   margin-bottom: 80px;
+   text-align: right;
+   color: white;
+}
+
+.section05-textbox > button{
+   border: none;
+   font-size: 1.2em;
+   font-weight: 300;
+   padding: 5px 15px;
+   transition: 0.1s;
+}
+
+.section05-textbox > button:hover{
+   cursor: pointer;
+   transform: scale(1.05);
+}
+
+.section05-right{
+   width: 50%;
+   height: 100%;
+   padding: 0% 5%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   overflow: hidden;
+}
+
+.section05-right::after{
+   content: "";
+   height: 600px;
+   width: 600px;
+   position: absolute;
+   background-color: black;
+   z-index: 0;
+   border-radius: 50%;
+   left: 0px;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.section05-right::before{
+   content: "";
+   position: absolute;
+   height: 600px;
+   width: 5px;
+   background-color: white;
+   z-index: 1;
+   left: 0px;
+}
+
+.section05-right > h2{
+   font-size: 4em;
+   font-weight: 400;
+   text-align: left;
+   z-index: 1;
+   color: white;
+}
+
+/* Footer */
+.custom-section-footer{
+   height: 100vh;
+   min-height: 720px;
+   max-height: 1080px;
+   background-image: url(./media/star-trails-8306233_1920.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 50% 100%;
+}
+
+.section-footer-container{
+   height: 100%;
+   padding: 5%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.section-footer-left{
+   width: 50%;
+   height: 100%;
+   padding: 0% 5%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.section-footer-left > h2{
+   font-size: 4em;
+   font-weight: 500;
+   color: white;
+   margin-bottom: 30px;
+}
+
+.footer-form{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.footer-form > input, textarea{
+   width: 100%;
+   border: 1px solid white;
+   outline: none;
+   background-color: rgba(0, 0, 0, 0.3);
+   margin-bottom: 30px;
+   padding: 10px;
+   font-size: 1.3em;
+   color: white;
+}
+
+.footer-form > input::placeholder, textarea::placeholder{
+   color: white;
+   font-weight: 200;
+}
+
+.footer-form > button{
+   border: none;
+   font-size: 1.2em;
+   font-weight: 300;
+   padding: 5px 15px;
+   transition: 0.1s;
+}
+
+.footer-form > button:hover{
+   cursor: pointer;
+   transform: scale(1.05);
+}
+
+.section-footer-right{
+   width: 50%;
+   height: 80%;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.section-footer-right-imagebox{
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   border: 5px solid white;
+}
+
+.section-footer-right-imagebox > img{
+   transform: scale(0.7);
+}
+
+.section-footer-right-textbox{
+   position: absolute;
+   color: white;
+   height: 100%;
+   width: 100%;
+   padding: 10%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-end;
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.section-footer-right-textbox > h2{
+   font-size: 4em;
+   font-weight: 500;
+   margin-bottom: 10px;
+   text-align: end;
+}
+
+.section-footer-right-textbox p{
+   text-align: end;
+   font-size: 1.3em;
+   font-weight: 200;
+}
